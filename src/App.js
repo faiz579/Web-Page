@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Navbar from "./Navbar/Navbar";
+import Footer from "./MyComponent/Footer/Footer";
+import Home from "./MyComponent/Home/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./MyComponent/About/About";
+import Services from "./MyComponent/Services/Services";
+import Blog from "./MyComponent/Blog/Blog";
+import Contact from "./MyComponent/Contact/Contact";
+import { HomeContext } from "./Context/homeContext";
 
-function App() {
+const App = () => {
+  const [theme, setTheme] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <HomeContext.Provider value={{ theme, setTheme }}>
+      <BrowserRouter>
+        <div
+          style={
+            theme
+              ? { backgroundColor: "#222", color: "#fff" }
+              : { backgroundColor: "#fff", color: "#222" }
+          }
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </HomeContext.Provider>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,17 @@
+.dark-outer-container {
+  background-color: black;
+}
+
+.more-container {
+  color: #e76f51;
+  cursor: pointer;
+}
+
+.social-icon-container ion-icon {
+  padding: 00.5rem;
+}
+
+.social-logo {
+  background-color: white !important;
+  color: black !important;
+}

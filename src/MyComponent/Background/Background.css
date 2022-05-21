@@ -1,0 +1,77 @@
+.container-background {
+  background-image: url(../../../public/images/slider-01.png);
+  aspect-ratio: 2/1.5;
+  background-size: cover;
+  background-position: center;
+}
+
+.search-bar {
+  border-radius: 35px 35px;
+  padding: 0.2rem;
+  gap: 1rem;
+  width: 100%;
+}
+
+.mr-sm-2 {
+  flex: 1;
+  width: fit-content;
+}
+
+.mr-sm-2:focus {
+  outline: none;
+}
+
+.container-upload {
+  background-color: #e76f51;
+  width: 100%;
+  border-radius: 35px 35px;
+  padding: 10px;
+  height: 50px;
+  margin: 5px;
+}
+
+.upload-img {
+  max-width: 25px;
+  max-height: 25px;
+}
+
+.upload {
+  background-color: #e76f51;
+  border-radius: 35px 35px;
+  cursor: pointer;
+}
+
+.search-icon {
+  max-width: 45px;
+  max-height: 45px;
+  padding: 10px;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.container-search-icon {
+  display: flex;
+  padding: 10px;
+}
+
+.upload:focus {
+  outline: none;
+}
+
+.text-container {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+@media only screen and (min-width: 960px) {
+  .container-background {
+    aspect-ratio: 16/6.9;
+  }
+  .container-background h2 {
+    text-align: center;
+  }
+  .container-background p {
+    text-align: center !important;
+  }
+} ;

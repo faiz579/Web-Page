@@ -1,0 +1,134 @@
+nav * {
+  /* border: 1px solid red; */
+}
+
+nav ul {
+  gap: 2rem;
+}
+
+.collapse ion-icon {
+  margin-left: 180px;
+  margin-top: 10px;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-brand {
+  border-radius: 20px 0px;
+  padding: 10px !important;
+  background-color: #e76f51;
+}
+
+.nav-item a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.nav-item {
+  padding-right: 20px;
+}
+
+.button {
+  gap: 1rem;
+}
+
+.btn {
+  background-color: #e76f51;
+  gap: 2rem;
+}
+
+.mr-sm-2:focus {
+  outline: none;
+}
+
+/* SIGN IN */
+
+.modal-body {
+  padding: 3rem !important;
+}
+
+.modal-body p {
+  color: gray;
+}
+
+.detail {
+  border: none;
+  width: 100%;
+}
+
+.detail:focus {
+  outline: none;
+}
+
+.remember-container {
+  display: flex;
+  gap: 6rem;
+}
+
+.remember {
+  margin-left: 5px;
+}
+
+.signin-btn {
+  background-color: #e76f51;
+  border-radius: 10px !important;
+  padding: 10px 150px 10px;
+  cursor: pointer;
+}
+
+.signin-btn:focus {
+  outline: none;
+}
+
+.forgot {
+  color: #e76f51 !important;
+}
+
+.continue-container {
+  margin-top: 20px;
+}
+
+.continue-container hr {
+  flex: 1;
+  margin-top: 4px !important;
+}
+
+.social-btn {
+  width: 100%;
+  gap: 6rem;
+}
+
+.fb-btn {
+  background-color: #4267b2;
+  border-radius: 5px;
+  padding: 10px 25px 10px;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.fb-btn:focus {
+  outline: none;
+}
+
+.google-btn {
+  border: 1px solid gray;
+  color: gray;
+  border-radius: 5px;
+  padding: 9px 30px 9px;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.google-btn:focus {
+  outline: none;
+}
+
+@media only screen and (min-width: 960px) {
+  .collapse ion-icon {
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
